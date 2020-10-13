@@ -1,5 +1,4 @@
 extends ../layouts/page-layout.pug
-include ./../mixins/*.pug
 
 block variables
 	- var title = 'Главная страница';
@@ -16,4 +15,56 @@ block content
 			.col
 				.ui-card
 					h3.mb-25 Главная страница
-					+test-button("./main.html")
+					+test-button("main.html")
+			.col
+				.ui-card
+					h3.mb-25 Портфолио
+					+test-button("portfolio.html")
+		.row
+			.col
+				.ui-card
+					h3.mb-25 Блог
+					+test-button("blog.html")
+			.col
+				.ui-card
+					h3.mb-25 Страница "Обо мне"
+					+test-button("./page-about-me.html")
+			.col
+				.ui-card
+					h3.mb-25 Страница проекта
+					+test-button("project-quantum.html")
+		.row
+			.col
+				.ui-card
+					h3.mb-25 Страница товара
+					+test-button("air-13.html")
+			.col
+				.ui-card
+					h3.mb-25 Контакты
+					+test-button("contacts.html")
+			.col
+				.ui-card
+					h3.mb-25 Оформление заказа
+					+test-button("order-registration.html")
+		.row
+			.col
+				.ui-card
+					h3.mb-25 Заказ оформлен
+					+test-button("order-placed.html")
+			.col
+				.ui-card
+					h3.mb-25 Оплата через Яндекс.Деньги
+					+test-button("choice-payment.html")
+			.col
+				.ui-card
+					h3.mb-25 Магазин
+					+test-button("shop.html")
+		.row
+			.col
+				.ui-card
+					h3.mb-25 Корзина
+					+test-button("page-shopping-cart.html")
+			.col
+				.ui-card
+					h3.mb-25 Выбор оплаты
+					+test-button("payment-method.html")
