@@ -8,5 +8,5 @@ mixin file-input(title, desc, id, pic_name="")
             input.file-input(type="file" id= id)
         if pic_name!=""
             .preview-img
-                img(src="../img/preview/"+ pic_name)
+                img(src="./img/preview/"+ pic_name)
                 +delete-button("Удалить")
